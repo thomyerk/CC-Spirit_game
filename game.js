@@ -15,10 +15,10 @@ window.onload = () => {
         spiritTile.setAttribute("draggable", true)
         spiritTile.setAttribute("position", i)
         spiritTile.addEventListener("dragstart", dragstart_handler)
+        //spiritTile.addEventListener("dragend", drop_happened)
         playfield.appendChild(spiritTile)
         tiles.splice(tiles.indexOf(item), 1);
     }
-    console.log(tiles);
 }
 
 function cardConstructor(cardElement, itemProperty, symbolCount){
@@ -35,16 +35,37 @@ function cardConstructor(cardElement, itemProperty, symbolCount){
 }
 
 function dragstart_handler(ev) {
-    dragged = ev.target
     ev.dataTransfer.setData("text/plain", ev.target.outerHTML);
-    ev.dataTransfer.effectAllowed = "move";
-    ev.dataTransfer.dropEffect = "move";
-    console.log(ev.target)
+    ev.dataTransfer.effectAllowed = "copy";
+    ev.dataTransfer.dropEffect = "copy";
+    //console.log(ev.target);
+    //drop_happened(ev.target)
 }
 
+function dragEnd(e) {
+    e.preventDefault();
+}
+function dragOver(e) {
+    e.preventDefault();
+}
+
+function drop_happened(target){
+    
+    // setTimeout(() => {
+    //     target.classList.add('hide');
+    // }, 0);
+}
+
+
+
 function drop_handler(ev){
-    dragged.parentNode.removeChild(dragged)
-    ev.target.insertAdjacentElement('beforeend',dragged);
+    let dragged = ev.dataTransfer.getData('text/plain');
+    console.log(dragged);
+    //drop_happened(ev.)
+    var div = document.createElement('div');
+    //console.log(ev);
+    div.innerHTML = dragged
+    ev.target.appendChild(div)
 }
 
 
