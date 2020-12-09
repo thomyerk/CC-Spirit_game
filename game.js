@@ -54,7 +54,7 @@ let tiles =
     {
         "type": 'webspiders',
         "howMany": 10,
-        "symbolCount": 2,
+        "symbolCount": 1,
         "powerIcon": null,
         "draggable": false,
         "onEdge": false,
@@ -76,7 +76,29 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
+        "type": 'webspiders',
+        "howMany": 10,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'webspiders',
+        "howMany": 10,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'webspiders',
         "howMany": 10,
         "symbolCount": 2,
         "powerIcon": null,
@@ -87,7 +109,7 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
+        "type": 'webspiders',
         "howMany": 10,
         "symbolCount": 2,
         "powerIcon": null,
@@ -98,7 +120,7 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
+        "type": 'webspiders',
         "howMany": 10,
         "symbolCount": 2,
         "powerIcon": null,
@@ -109,8 +131,52 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'vines',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": null,
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'vines',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'vines',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'vines',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'vines',
+        "howMany": 8,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -120,8 +186,8 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'vines',
+        "howMany": 8,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -131,8 +197,52 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'branches',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": null,
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'branches',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'branches',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'branches',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'branches',
+        "howMany": 8,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -142,8 +252,8 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'branches',
+        "howMany": 8,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -153,8 +263,41 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'dewdrops',
+        "howMany": 7,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'dewdrops',
+        "howMany": 7,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'dewdrops',
+        "howMany": 7,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'dewdrops',
+        "howMany": 7,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -164,8 +307,8 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'dewdrops',
+        "howMany": 7,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -175,8 +318,30 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'flowers',
+        "howMany": 6,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'flowers',
+        "howMany": 6,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'flowers',
+        "howMany": 6,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -186,8 +351,8 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'flowers',
+        "howMany": 6,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -197,8 +362,52 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'fruits',
+        "howMany": 6,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'fruits',
+        "howMany": 6,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'fruits',
+        "howMany": 6,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'fruits',
+        "howMany": 6,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'fruits',
+        "howMany": 6,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -208,8 +417,52 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'leaves',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": null,
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'leaves',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'leaves',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'leaves',
+        "howMany": 8,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'leaves',
+        "howMany": 8,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -219,261 +472,8 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'leaves',
+        "howMany": 8,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
