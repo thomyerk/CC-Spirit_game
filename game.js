@@ -483,8 +483,41 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'moss',
+        "howMany": 5,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'moss',
+        "howMany": 5,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'moss',
+        "howMany": 5,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'moss',
+        "howMany": 5,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -494,8 +527,41 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'mushrooms',
+        "howMany": 7,
+        "symbolCount": 1,
+        "powerIcon": 'sun',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'mushrooms',
+        "howMany": 7,
+        "symbolCount": 1,
+        "powerIcon": 'moon',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'mushrooms',
+        "howMany": 7,
+        "symbolCount": 1,
+        "powerIcon": 'fire',
+        "draggable": false,
+        "onEdge": false,
+        "favor": false,
+        "row": null,
+        "position": null
+    },
+    {
+        "type": 'mushrooms',
+        "howMany": 7,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
@@ -505,74 +571,8 @@ let tiles =
         "position": null
     },
     {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
-        "symbolCount": 2,
-        "powerIcon": null,
-        "draggable": false,
-        "onEdge": false,
-        "favor": false,
-        "row": null,
-        "position": null
-    },
-    {
-        "type": 'adadsad',
-        "howMany": 10,
+        "type": 'mushrooms',
+        "howMany": 7,
         "symbolCount": 2,
         "powerIcon": null,
         "draggable": false,
