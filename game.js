@@ -35,16 +35,16 @@ function cardConstructor(cardElement, itemProperty, symbolCount){
 }
 
 function dragstart_handler(ev) {
+    dragged = ev.target
     ev.dataTransfer.setData("text/plain", ev.target.outerHTML);
     ev.dataTransfer.effectAllowed = "move";
     ev.dataTransfer.dropEffect = "move";
+    console.log(ev.target)
 }
 
 function drop_handler(ev){
-    const data = ev.dataTransfer.getData("text/plain");
-    //ev.target.appendChild(document.getElementById(data));
-    //kijelölni új onedge darabokat - pl az adjacenttel
-    //console.log(data)
+    dragged.parentNode.removeChild(dragged)
+    ev.target.insertAdjacentElement('beforeend',dragged);
 }
 
 
