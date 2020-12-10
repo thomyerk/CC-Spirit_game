@@ -36,25 +36,22 @@ function cardConstructor(cardElement, itemProperty, symbolCount){
     return createdItem
 }
 
+let dragged
+let siblingPrev
+let siblingNext
+
+
 function dragstart_handler(ev) {
     if(ev.target.draggable == false){
         e.preventDefault()
     }
-    dragged = ev.target
-    siblingPrev = null 
-    siblingNext = null
-    console.log(ev.target.getAttribute("onedge"))
-    if(ev.target.getAttribute("onedge") === true){
+    dragged = ev.target  
+    if(dragged.getAttribute("onedge") === "true"){
         siblingPrev = dragged.previousSibling
-        siblingPrev.setAttribute("onedge", true)
     }else{
-        siblingNext = dragged.nextSibling
-
+        siblingNext = dragged.nextSibling  
     }
-
 }
-
-
 
 function drop_handler(ev){
     if(siblingNext){
@@ -64,9 +61,9 @@ function drop_handler(ev){
         siblingPrev.setAttribute("draggable", true)
         siblingPrev.setAttribute("onedge",true)
     }
+    dragged.style.height = "75px"
     ev.target.insertAdjacentElement('beforeend',dragged);
 }
-
 
 let tiles = 
 [
