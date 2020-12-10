@@ -6,14 +6,15 @@ window.onload = () => {
         let spiritTile = document.createElement("div")
         spiritTile.classList.add("tile")
         spiritTile.classList.add("tile"+(i+1))
-        // if(sorszám in (0,11,12,23,24,35,36,47))
-        //     spiritTile.onedge = true
+        if([0,11,12,23,24,35,36,47].includes(i))
+            spiritTile.setAttribute("draggable", true)
+        if([11,23,35,47].includes(i))
+            spiritTile.setAttribute("onedge", true)
         let iconsContainer = spiritTile.insertAdjacentElement('beforeend', cardConstructor("icons-container", null, 0))
         let symbols = iconsContainer.insertAdjacentElement('beforeend', cardConstructor("symbols", item.type, item.symbolCount))        
         let icons = iconsContainer.insertAdjacentElement('beforeend', cardConstructor("icons", item.powerIcon, 1))   
         let howMany = spiritTile.insertAdjacentElement('beforeend', cardConstructor("howMany", null, 0))
         howMany.innerHTML = item.howMany
-        spiritTile.setAttribute("draggable", true)
         spiritTile.setAttribute("position", i)
         spiritTile.addEventListener("dragstart", dragstart_handler)
         playfield.appendChild(spiritTile)
@@ -27,7 +28,8 @@ function cardConstructor(cardElement, itemProperty, symbolCount){
     if(itemProperty !== null){
         for(let i = 0; i < symbolCount; i++){
             let symbol = document.createElement("img")
-            symbol.setAttribute("src", './img/' + itemProperty + '.jpg')
+            symbol.setAttribute("src", './img/' + itemProperty + '.png')
+            symbol.setAttribute("draggable", false)
             createdItem.insertAdjacentElement('beforeend',symbol)
         }
     }
@@ -35,26 +37,34 @@ function cardConstructor(cardElement, itemProperty, symbolCount){
 }
 
 function dragstart_handler(ev) {
+    if(ev.target.draggable == false){
+        e.preventDefault()
+    }
     dragged = ev.target
-    console.log(dragged);
-    // ev.dataTransfer.setData("text/plain", ev.target.outerHTML);
-    // ev.dataTransfer.effectAllowed = "copy";
-    // ev.dataTransfer.dropEffect = "copy";
-    //ev.target.classList.add("hide")
-    //console.log(ev.target);
-    //drop_happened(ev.target)
+    siblingPrev = null 
+    siblingNext = null
+    console.log(ev.target.getAttribute("onedge"))
+    if(ev.target.getAttribute("onedge") === true){
+        siblingPrev = dragged.previousSibling
+        siblingPrev.setAttribute("onedge", true)
+    }else{
+        siblingNext = dragged.nextSibling
+
+    }
+
 }
 
+
+
 function drop_handler(ev){
-    // let dragged = ev.dataTransfer.getData('text/plain');
-    // console.log(dragged);
-    dragged.parentNode.removeChild(dragged)
+    if(siblingNext){
+        siblingNext.setAttribute("draggable", true)
+    }
+    if(siblingPrev){
+        siblingPrev.setAttribute("draggable", true)
+        siblingPrev.setAttribute("onedge",true)
+    }
     ev.target.insertAdjacentElement('beforeend',dragged);
-    //drop_happened(ev.)
-    //var div = document.createElement('div');
-    //console.log(ev);
-    //div.innerHTML = dragged
-    //ev.target.appendChild(div)
 }
 
 
