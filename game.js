@@ -6,25 +6,31 @@ function addClass(element, data1, data2) {
 }
 
 window.onload = () => {
-
-    for(let i=0; i < 48; i++){
+    for(let i=1; i <= 48; i++){
         var item = tiles[Math.floor(Math.random() * tiles.length)];
         let spiritTile = document.createElement("div")
-        addClass(spiritTile, "tile", "tile"+(i+1))
-        if([0,11,12,23,24,35,36,47].includes(i))
+        addClass(spiritTile, "tile", "tile"+i)
+        if([1,12,13,24,25,36,37,48].includes(i))
             spiritTile.setAttribute("draggable", true)
-        if([11,23,35,47].includes(i))
+        if([12,24,36,48].includes(i))
             spiritTile.setAttribute("onedge", true)
         let iconsContainer = spiritTile.insertAdjacentElement('beforeend', cardConstructor("icons-container", null, 0))
         let symbols = iconsContainer.insertAdjacentElement('beforeend', cardConstructor("symbols", item.type, item.symbolCount))        
         let icons = iconsContainer.insertAdjacentElement('beforeend', cardConstructor("icons", item.powerIcon, 1))   
         let howMany = spiritTile.insertAdjacentElement('beforeend', cardConstructor("howMany", null, 0))
         howMany.innerHTML = item.howMany
-        spiritTile.setAttribute("position", i)
+        spiritTile.style.backgroundColor = cardColors[item.type]
         spiritTile.addEventListener("dragstart", dragstart_handler)
         playfield.appendChild(spiritTile)
         tiles.splice(tiles.indexOf(item), 1);
     }
+}
+
+let cardColors = {
+    "webspiders":"#b39ddb",
+    "branches": "green",
+    "dewdrops": "blue"
+
 }
 
 function cardConstructor(cardElement, itemProperty, symbolCount){
@@ -48,7 +54,7 @@ let siblingNext
 
 function dragstart_handler(ev) {
     if(ev.target.draggable == false){
-        e.preventDefault()
+        ev.preventDefault()
     }
     dragged = ev.target  
     if(dragged.getAttribute("onedge") === "true"){
@@ -58,15 +64,21 @@ function dragstart_handler(ev) {
     }
 }
 
+
 function drop_handler(ev){
     if(siblingNext){
         siblingNext.setAttribute("draggable", true)
     }
-    if(siblingPrev){
+    if(siblingPrev && siblingPrev.nodeType !== 3){
         siblingPrev.setAttribute("draggable", true)
         siblingPrev.setAttribute("onedge",true)
+    }else{
+        dragged.classList.remove("tile")
+        dragged.classList.add("dropped")
+        ev.target.insertAdjacentElement('beforeend',dragged)
     }
-    dragged.style.height = "75px"
+    dragged.classList.remove("tile")
+    dragged.classList.add("dropped")
     ev.target.insertAdjacentElement('beforeend',dragged);
 }
 
