@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap')
+    
+*
+    margin: 0
+    padding: 0
+
 body
     display: grid
     grid-template-columns: 1fr 3fr 1fr
-    grid-template-rows: 3fr 1fr
-    grid-template-areas: "dropzone1 playfield dropzone3" ". dropzone2 ."
+    grid-template-rows: 70px 3fr 1fr
+    grid-template-areas: ". h1 ." "dropzone1 playfield dropzone3" ". dropzone2 ."
     justify-items: center
+    align-items: center
+    background-color: #321f28
+    height: 100vh
 #playfield
     grid-area: playfield
     display: grid
+    gap: 10px
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: repeat(4, 1fr)
     grid-template-areas: "tile1 tile2 tile3 tile4 tile5 tile6 tile7 tile8 tile9 tile10 tile11 tile12" "tile13 tile14 tile15 tile16 tile17 tile18 tile19 tile20 tile21 tile22 tile23 tile24" "tile25 tile26 tile27 tile28 tile29 tile30 tile31 tile32 tile33 tile34 tile35 tile36" "tile37 tile38 tile39 tile40 tile41 tile42 tile43 tile44 tile45 tile46 tile47 tile48"
@@ -19,10 +29,16 @@ body
 @include tileGenerator()
 
     
-
+h1
+    display: flex
+    align-items: center
+    grid-area: h1
+    color: #ffffff
+    font-family: 'Berkshire Swash', cursive
 .tile
     width: 70px
-    height: 150px
+    height: 135px
+    border-radius: 5px
     display: flex
     flex-wrap: wrap
     border: 1px solid black
@@ -39,11 +55,10 @@ body
     display: flex
     height: 50px
 .droparea:-moz-drag-over
-    outline: 1px solid black
+    // outline: 1px solid black
 .dropzone
     display: flex
-    border: 1px 
-    outline: 1px solid black
+    border-radius: 10px
 .hide
     transform: translateX(-9999px)
 
@@ -51,11 +66,12 @@ body
     display: flex
     flex-wrap: wrap
     align-content: flex-start
+    gap: 17px
     grid-area: dropzone1
     left: 0
-    width: 216px
+    width: 250px
     height: 600px
-    background-color: mistyrose
+    background-color: #734046
 #dropzone2
     display: flex
     flex-wrap: wrap
@@ -64,7 +80,7 @@ body
     bottom: 0
     width: 600px
     height: 200px
-    background-color: lightyellow
+    background-color: #e79e4f
 #dropzone3
     display: flex
     flex-wrap: wrap
@@ -73,5 +89,5 @@ body
     right: 0
     width: 216px
     height: 600px
-    background-color: powderblue
+    background-color: #a05344
 

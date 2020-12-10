@@ -1,11 +1,16 @@
 var playfield = document.querySelector('#playfield')
 
+function addClass(element, data1, data2) {
+    element.classList.add(data1)
+    element.classList.add(data2)
+}
+
 window.onload = () => {
+
     for(let i=0; i < 48; i++){
         var item = tiles[Math.floor(Math.random() * tiles.length)];
         let spiritTile = document.createElement("div")
-        spiritTile.classList.add("tile")
-        spiritTile.classList.add("tile"+(i+1))
+        addClass(spiritTile, "tile", "tile"+(i+1))
         if([0,11,12,23,24,35,36,47].includes(i))
             spiritTile.setAttribute("draggable", true)
         if([11,23,35,47].includes(i))
