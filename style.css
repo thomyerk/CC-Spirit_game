@@ -1,7 +1,200 @@
 #playfield {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "tile1 tile2 tile3 tile4 tile5 tile6 tile7 tile8 tile9 tile10 tile11 tile12" "tile13 tile114 tile15 tile16 tile17 tile18 tile19 tile20 tile21 tile22 tile23 tile24" "tile13 tile14 tile15 tile16 tile17 tile18 tile19 tile20 tile21 tile22 tile23 tile24" "tile25 tile26 tile27 tile28 tile29 tile30 tile31 tile32 tile33 tile34 tile35 tile36" "tile37 tile38 tile39 tile40 tile41 tile42 tile43 tile44 tile45 tile46 tile47 tile48";
+}
+
+.tile1 {
+  grid-area: tile1;
+}
+
+.tile2 {
+  grid-area: tile2;
+}
+
+.tile3 {
+  grid-area: tile3;
+}
+
+.tile4 {
+  grid-area: tile4;
+}
+
+.tile5 {
+  grid-area: tile5;
+}
+
+.tile6 {
+  grid-area: tile6;
+}
+
+.tile7 {
+  grid-area: tile7;
+}
+
+.tile8 {
+  grid-area: tile8;
+}
+
+.tile9 {
+  grid-area: tile9;
+}
+
+.tile10 {
+  grid-area: tile10;
+}
+
+.tile11 {
+  grid-area: tile11;
+}
+
+.tile12 {
+  grid-area: tile12;
+}
+
+.tile13 {
+  grid-area: tile13;
+}
+
+.tile14 {
+  grid-area: tile14;
+}
+
+.tile15 {
+  grid-area: tile15;
+}
+
+.tile16 {
+  grid-area: tile16;
+}
+
+.tile17 {
+  grid-area: tile17;
+}
+
+.tile18 {
+  grid-area: tile18;
+}
+
+.tile19 {
+  grid-area: tile19;
+}
+
+.tile20 {
+  grid-area: tile20;
+}
+
+.tile21 {
+  grid-area: tile21;
+}
+
+.tile22 {
+  grid-area: tile22;
+}
+
+.tile23 {
+  grid-area: tile23;
+}
+
+.tile24 {
+  grid-area: tile24;
+}
+
+.tile25 {
+  grid-area: tile25;
+}
+
+.tile26 {
+  grid-area: tile26;
+}
+
+.tile27 {
+  grid-area: tile27;
+}
+
+.tile28 {
+  grid-area: tile28;
+}
+
+.tile29 {
+  grid-area: tile29;
+}
+
+.tile30 {
+  grid-area: tile30;
+}
+
+.tile31 {
+  grid-area: tile31;
+}
+
+.tile32 {
+  grid-area: tile32;
+}
+
+.tile33 {
+  grid-area: tile33;
+}
+
+.tile34 {
+  grid-area: tile34;
+}
+
+.tile35 {
+  grid-area: tile35;
+}
+
+.tile36 {
+  grid-area: tile36;
+}
+
+.tile37 {
+  grid-area: tile37;
+}
+
+.tile38 {
+  grid-area: tile38;
+}
+
+.tile39 {
+  grid-area: tile39;
+}
+
+.tile40 {
+  grid-area: tile40;
+}
+
+.tile41 {
+  grid-area: tile41;
+}
+
+.tile42 {
+  grid-area: tile42;
+}
+
+.tile43 {
+  grid-area: tile43;
+}
+
+.tile44 {
+  grid-area: tile44;
+}
+
+.tile45 {
+  grid-area: tile45;
+}
+
+.tile46 {
+  grid-area: tile46;
+}
+
+.tile47 {
+  grid-area: tile47;
+}
+
+.tile48 {
+  grid-area: tile48;
 }
 
 .tile {

@@ -5,6 +5,7 @@ window.onload = () => {
         var item = tiles[Math.floor(Math.random() * tiles.length)];
         let spiritTile = document.createElement("div")
         spiritTile.classList.add("tile")
+        spiritTile.classList.add("tile"+(i+1))
         // if(sorszám in (0,11,12,23,24,35,36,47))
         //     spiritTile.onedge = true
         let iconsContainer = spiritTile.insertAdjacentElement('beforeend', cardConstructor("icons-container", null, 0))
@@ -15,7 +16,6 @@ window.onload = () => {
         spiritTile.setAttribute("draggable", true)
         spiritTile.setAttribute("position", i)
         spiritTile.addEventListener("dragstart", dragstart_handler)
-        //spiritTile.addEventListener("dragend", drop_happened)
         playfield.appendChild(spiritTile)
         tiles.splice(tiles.indexOf(item), 1);
     }
@@ -35,39 +35,27 @@ function cardConstructor(cardElement, itemProperty, symbolCount){
 }
 
 function dragstart_handler(ev) {
-    ev.dataTransfer.setData("text/plain", ev.target.outerHTML);
-    ev.dataTransfer.effectAllowed = "copy";
-    ev.dataTransfer.dropEffect = "copy";
+    dragged = ev.target
+    console.log(dragged);
+    // ev.dataTransfer.setData("text/plain", ev.target.outerHTML);
+    // ev.dataTransfer.effectAllowed = "copy";
+    // ev.dataTransfer.dropEffect = "copy";
+    //ev.target.classList.add("hide")
     //console.log(ev.target);
     //drop_happened(ev.target)
 }
 
-function dragEnd(e) {
-    e.preventDefault();
-}
-function dragOver(e) {
-    e.preventDefault();
-}
-
-function drop_happened(target){
-    
-    // setTimeout(() => {
-    //     target.classList.add('hide');
-    // }, 0);
-}
-
-
-
 function drop_handler(ev){
-    let dragged = ev.dataTransfer.getData('text/plain');
-    console.log(dragged);
+    // let dragged = ev.dataTransfer.getData('text/plain');
+    // console.log(dragged);
+    dragged.parentNode.removeChild(dragged)
+    ev.target.insertAdjacentElement('beforeend',dragged);
     //drop_happened(ev.)
-    var div = document.createElement('div');
+    //var div = document.createElement('div');
     //console.log(ev);
-    div.innerHTML = dragged
-    ev.target.appendChild(div)
+    //div.innerHTML = dragged
+    //ev.target.appendChild(div)
 }
-
 
 
 let tiles = 
