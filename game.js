@@ -28,9 +28,14 @@ window.onload = () => {
 
 let cardColors = {
     "webspiders":"#b39ddb",
-    "branches": "green",
-    "dewdrops": "blue"
-
+    "branches": "#a1887f",
+    "dewdrops": "#80cbc4",
+    "flowers": "#ff7043",
+    "fruits": "#f48fb1",
+    "leaves": "#b0bec5",
+    "moss": "#aed581",
+    "mushrooms": "#ffa000",
+    "vines": "#fff9c4"
 }
 
 function cardConstructor(cardElement, itemProperty, symbolCount){
